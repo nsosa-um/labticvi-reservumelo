@@ -9,6 +9,8 @@ CREATE TABLE `Usuarios` (
   `cedula` nvarchar(8),
   `fchNacimiento` date,
   `direccion` nvarchar(50),
+  `email` nvarchar(100) not null,
+  `password` nvarchar(100) not null,
   PRIMARY KEY (`idUsuario`)
 );
 

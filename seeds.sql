@@ -1,7 +1,7 @@
 -- Usuarios
-INSERT INTO Usuarios VALUES (0, "Bruno Camargo", 0, "46873176", "1995-11-18", "Ituzaingo M233 S10, El Pinar");
-INSERT INTO Usuarios VALUES (0, "Adolfo Scalabrini", 1, "46895534", "1996-08-12", "Av. Francisco Soca 1223");
-INSERT INTO Usuarios VALUES (0, "Guillermo Cola", 1, "48406814", "1996-06-28", "Pedro Berro 676 esq 21 de Septiembre");
+INSERT INTO Usuarios VALUES (0, "Bruno Camargo", 0, "46873176", "1995-11-18", "Ituzaingo M233 S10, El Pinar", "bcamargo@correo.um.edu.uy", "bruno123");
+INSERT INTO Usuarios VALUES (0, "Adolfo Scalabrini", 1, "46895534", "1996-08-12", "Av. Francisco Soca 1223", "ascalabrini@correo.um.edu.uy", "ado123");
+INSERT INTO Usuarios VALUES (0, "Guillermo Cola", 1, "48406814", "1996-06-28", "Pedro Berro 676 esq 21 de Septiembre", "gcola@correo.um.edu.uy", "guille123");
 
 -- Autores
 
