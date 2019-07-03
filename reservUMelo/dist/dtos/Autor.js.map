@@ -1,0 +1,1 @@
+{"version":3,"file":"Autor.js","sourceRoot":"","sources":["../../src/dtos/Autor.ts"],"names":[],"mappings":";;AAAA,MAAM,KAAK;IAKV,YAAY,GAAW,EAAE,eAAuB;QAC/C,IAAI,CAAC,EAAE,GAAG,GAAG,CAAC;QACd,IAAI,CAAC,cAAc,GAAG,eAAe,CAAC;IAEvC,CAAC;CACD;AAED,kBAAe,KAAK,CAAA"}
