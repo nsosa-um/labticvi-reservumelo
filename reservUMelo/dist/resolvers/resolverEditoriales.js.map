@@ -1,0 +1,1 @@
+{"version":3,"file":"resolverEditoriales.js","sourceRoot":"","sources":["../../src/resolvers/resolverEditoriales.ts"],"names":[],"mappings":";;;;;AAAA,4EAAiD;AAGjD,MAAM,mBAAmB,GAAG;IAC3B,KAAK,EAAE;QACN,YAAY,EAAE,CAAC,CAAO,EAAE,EAAC,EAAE,EAAE,MAAM,EAA+B,EAAwB,EAAE;YAC3F,OAAO,wBAAY,CAAC,EAAE,EAAE,MAAM,CAAC,CAAC;QACjC,CAAC;KACD;CACD,CAAC;AAEF,kBAAe,mBAAmB,CAAC"}

@@ -27,7 +27,6 @@ const libros = (idEjemplar : Number, nombreLibro : string, nombreAutor : string,
             }
             const toReturn : Libro[] = []
             for (const result of results){
-                console.log(result)
                 const newLibro = new Libro(result.idLibro, /* result.idEditorial,*/ result.nombre, result.generos)
                 toReturn.push(newLibro);
             }

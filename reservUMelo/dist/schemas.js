@@ -51,7 +51,8 @@ const schema = apollo_server_1.makeExecutableSchema({
 
   type Query {
     getAutorByID(id: Int): Autor,
-    libros(nombreLibro: String, nombreAutor: String, estado: Boolean, nombreEditorial: String, idEjemplar: ID): [Libro]
+    libros(nombreLibro: String, nombreAutor: String, estado: Boolean, nombreEditorial: String, idEjemplar: ID): [Libro],
+    getEditorial(id: ID, nombre: String): Editorial
   }
 
   type Mutation {
