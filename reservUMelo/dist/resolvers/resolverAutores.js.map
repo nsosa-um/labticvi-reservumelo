@@ -1,0 +1,1 @@
+{"version":3,"file":"resolverAutores.js","sourceRoot":"","sources":["../../src/resolvers/resolverAutores.ts"],"names":[],"mappings":";;;;;AAAA,oEAA6C;AAG7C,MAAM,eAAe,GAAG;IACvB,KAAK,EAAE;QACN,YAAY,EAAE,CAAC,CAAO,EAAE,EAAC,EAAE,EAAuC,EAAoB,EAAE;YACvF,OAAO,oBAAY,CAAC,EAAE,CAAC,CAAC;QACzB,CAAC;KACD;CACD,CAAC;AAEF,kBAAe,eAAe,CAAC"}
