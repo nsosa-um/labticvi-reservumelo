@@ -28,7 +28,7 @@ const schema: GraphQLSchema = makeExecutableSchema({
 
   type Libro {
     id: ID!,
-    editorial: Editorial!,
+    editorial: ID!,
     nombre: String!,
     generos: String,
     autores: [Autor]!
@@ -57,6 +57,7 @@ const schema: GraphQLSchema = makeExecutableSchema({
 
   type Mutation {
     eliminarLibro(id: String!): Libro!
+    agregarLibro(idEditorial: ID!, nombre: String, generos: String): String!
   }
 `
 });

@@ -6,6 +6,11 @@ const libroResolver = {
         libros: (_, { nombreLibro, nombreAutor, estado, nombreEditorial, idEjemplar }) => {
             return librosDAO_1.libros(idEjemplar, nombreLibro, nombreAutor, estado, nombreEditorial);
         }
+    },
+    Mutation: {
+        agregarLibro: (_, { idEditorial, nombre, generos }) => {
+            return librosDAO_1.agregarLibro(idEditorial, nombre, generos);
+        }
     }
 };
 exports.default = libroResolver;
