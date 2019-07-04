@@ -1,4 +1,12 @@
 "use strict";
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -31,8 +39,7 @@ const libros = (idEjemplar, nombreLibro, nombreAutor, estado, nombreEditorial) =
             }
             const toReturn = [];
             for (const result of results) {
-                console.log(result);
-                const newLibro = new Libro_1.default(result.idLibro, /* result.idEditorial,*/ result.nombre, result.generos);
+                const newLibro = new Libro_1.default(result.idLibro, result.idEditorial, result.nombre, result.generos);
                 toReturn.push(newLibro);
             }
             resolve(toReturn);
@@ -40,4 +47,17 @@ const libros = (idEjemplar, nombreLibro, nombreAutor, estado, nombreEditorial) =
     });
 };
 exports.libros = libros;
+const agregarLibro = (idEditorial, nombre, generos) => __awaiter(this, void 0, void 0, function* () {
+    const query = "INSERT INTO Libros VALUES(0, ?, ?, ?)";
+    return new Promise((resolve, reject) => {
+        dbconnection_1.default.query(query, [idEditorial, nombre, generos], (err, results) => __awaiter(this, void 0, void 0, function* () {
+            if (err) {
+                reject(err);
+                return;
+            }
+            resolve('Se ha agregado correctamente el libro.');
+        }));
+    });
+});
+exports.agregarLibro = agregarLibro;
 //# sourceMappingURL=librosDAO.js.map

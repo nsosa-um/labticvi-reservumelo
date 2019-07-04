@@ -27,7 +27,7 @@ const libros = (idEjemplar : Number, nombreLibro : string, nombreAutor : string,
             }
             const toReturn : Libro[] = []
             for (const result of results){
-                const newLibro = new Libro(result.idLibro, /* result.idEditorial,*/ result.nombre, result.generos)
+                const newLibro = new Libro(result.idLibro, result.idEditorial, result.nombre, result.generos)
                 toReturn.push(newLibro);
             }
             resolve(toReturn);
@@ -35,4 +35,21 @@ const libros = (idEjemplar : Number, nombreLibro : string, nombreAutor : string,
     })
 }
 
-export { libros }
+const agregarLibro = async (idEditorial: Number, nombre: String, generos: String) => {
+
+    const query = "INSERT INTO Libros VALUES(0, ?, ?, ?)";
+    
+    return new Promise((resolve, reject) => {
+
+        connection.query(query, [idEditorial, nombre, generos], async (err : string, results : any) => {
+            if (err) {
+                reject(err);
+                return;
+            }
+            resolve('Se ha agregado correctamente el libro.');
+        })
+    })
+
+}
+
+export { libros, agregarLibro }
